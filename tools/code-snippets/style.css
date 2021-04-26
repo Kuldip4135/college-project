@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, sans-serif, sans-serif, sans-serif;
+}
+
+:root {
+  --heading-color: #0f0f0f;
+  --link-color: #7633f9;
+  --text-color: #d5d2da;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--heading-color);
+  color: var(--text-color);
+}
+
+section {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.snippets__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+textarea,
+form button {
+  padding: 1rem;
+  border: none;
+  background-color: var(--text-color);
+  font-size: 2rem;
+}
+
+form button {
+  color: var(--heading-color);
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+button:hover {
+  color: var(--text-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+}
+
+.snippet {
+  position: relative;
+  overflow: auto;
+  height: auto;
+  max-height: 45rem;
+  background-color: var(--text-color);
+  margin: 2rem;
+  color: var(--heading-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 650ms;
+}
+
+.snippet p {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.fa-copy,
+.fa-trash {
+  pointer-events: none;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: -1.8%;
+  font-size: 3rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--link-color);
+  right: 0;
+  border-bottom-left-radius: 1rem;
+}
+
+.deleted {
+  transform: scale(0);
+  opacity: 0;
+}

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #010101;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+a {
+  font-style: italic;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #7633f9;
+  text-transform: capitalize;
+}
+
+a:hover {
+  color: #5303f3;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #d5d2da;
+}
+
+.hero-gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.hero-gridItem {
+  height: 20rem;
+  background-color: #d5d2da;
+  padding: 1rem;
+  overflow-y: auto;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  background-position: 90% 100%;
+  background-size: 10rem;
+}
+
+.hero-gridItem:first-child {
+  background-image: url("./images/amazon-com-computer-icons-book-library-icon-study-pictures-fda364766a4a09341db23e8d7f47677d.png");
+}
+
+.hero-gridItem:nth-child(2) {
+  background-image: url("./images/—Pngtree—yellow\ creative\ bulb\ team\ idea_3847872.png");
+}
+.hero-gridItem:nth-child(3) {
+  background-image: url("./images/flaticon.png");
+}
+.hero-gridItem:nth-child(4) {
+  background-image: url("./images/PinClipart.com_fresh-clipart_3782704.png");
+}
+.hero-gridItem:nth-child(5) {
+  background-image: url("./images/pngwing.com.png");
+}
+.hero-gridItem:nth-child(6) {
+  background-image: url("./images/youtube-logo-png-2067.png");
+}

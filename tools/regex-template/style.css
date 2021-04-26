@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --heading-color: #0f0f0f;
+  --link-color: #7633f9;
+  --text-color: #d5d2da;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--heading-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 4rem 0 2rem 0;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.template__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.template {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  max-height: 25rem;
+  background-color: var(--text-color);
+  margin: 2rem;
+  color: var(--heading-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+button {
+  position: absolute;
+  right: 0.5%;
+  top: 2%;
+  border-radius: 1rem;
+  color: var(--heading-color);
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--text-color);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  color: var(--text-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.alertBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--link-color);
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+  user-select: none;
+  transition: all 550ms;
+  z-index: 9999;
+}
+
+.alertBox.active {
+  opacity: 1;
+  transform: scale(1);
+}

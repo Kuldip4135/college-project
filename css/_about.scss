@@ -1,0 +1,45 @@
+.about__content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+.about__text {
+  text-align: center;
+}
+
+.about__text h2 {
+  font-weight: 600;
+}
+
+.about__text p {
+  margin: 2rem 0;
+}
+
+.about__text li {
+  list-style: decimal;
+  font-size: 1.6rem;
+}
+
+.about__text .btn {
+  margin-top: 2rem;
+}
+
+.about__text h1 {
+  font-size: 3.6rem;
+  color: var(--heading-color);
+}
+
+@media screen and (min-width: 45rem) {
+  .about__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__text {
+    text-align: left;
+  }
+
+  .about__img {
+    order: 1;
+  }
+}

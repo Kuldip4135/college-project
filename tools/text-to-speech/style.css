@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-color: #0f0f0f;
+  --link-color: #7633f9;
+  --text-color: #d5d2da;
+}
+
+body {
+  background-color: var(--heading-color);
+  font-family: sans-serif;
+}
+
+section {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-color);
+  margin: 2rem 0;
+}
+
+textarea {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+select {
+  appearance: none;
+}
+
+#speed {
+  appearance: textfield;
+}
+
+select,
+#speed {
+  height: 2rem;
+  padding: 0 1rem;
+  background-color: var(--link-color);
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 10rem;
+}
+
+select option {
+  background-color: var(--text-color);
+  color: var(--heading-color);
+}
+
+input {
+  font-size: 1.2rem;
+  margin: 0 2rem 0 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  padding: 0.5rem 4rem;
+  border-radius: 10rem;
+  background-color: var(--link-color);
+  margin: 1rem 2rem 1rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--link-color);
+}
+
+label {
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+
+.select-container {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

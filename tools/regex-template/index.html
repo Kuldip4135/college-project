@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RegEx Template 🗒️</h1>
+
+      <div class="template__container">
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyUserName')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>Username Validation[2-10 Character Long Username]</h2>
+          <p id="copyUserName">/^[a-zA-Z]([0-9a-zA-Z]){2,10}$/</p>
+        </div>
+
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyPassword')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>Password Validation</h2>
+          <p id="copyPassword">
+            (?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?=.*[!@#$*])
+          </p>
+        </div>
+
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyEmail')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>Email Validation</h2>
+          <p id="copyEmail">/^[^ ]+@[^ ]+\.[a-z]{2,3}/</p>
+        </div>
+
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyMasterCard')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>Mastercard Validation</h2>
+          <p id="copyMasterCard">
+            ^(?:5[1–5][0–9]{2}|222[1–9]|22[3–9][0–9]|2[3–6][0–9]{2}|27[01][0–9]|2720)[0–9]{12}$
+          </p>
+        </div>
+
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyVisaCard')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>VisaCard Validation</h2>
+          <p id="copyVisaCard">^4[0–9]{12}(?:[0–9]{3})?$</p>
+        </div>
+
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyCsv')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>CSV Validation</h2>
+          <p id="copyCsv">(?:\s*(?:\"([^\"]*)\"|([^,]+))\s*,?)+?</p>
+        </div>
+
+        <div class="template">
+          <button id="copyBtn" onclick="copyTextFromElement('copyPhoneNumber')">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </button>
+          <h2>Phone Number Validation</h2>
+          <p id="copyPhoneNumber">
+            ((\+*)((0[ -]+)*|(91 )*)(\d{12}+|\d{10}+))|\d{5}([- ]*)\d{6}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alertBox"></div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/4d129299c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script defer src="app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Music Specially For You</h1>
+      <div class="music__container">
+        <h2 id="title">Music 1</h2>
+        <h3>For Programmers/Coders</h3>
+        <div class="music__img">
+          <img src="./Images/music-1.jpg" alt="music__img" />
+        </div>
+        <audio src="./Music/music-1.mp3"></audio>
+
+        <!-- Progress Bar -->
+        <div class="progressbar__container" id="musicProgressbar">
+          <div class="progress__duration">
+            <p id="currentDuration">0 : 00</p>
+            <p id="totalDuration">20 : 55</p>
+          </div>
+
+          <div class="progressMeter__container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="music__controls">
+          <i
+            class="fas fa-backward control"
+            id="prevMusic"
+            title="Previous"
+          ></i>
+          <i
+            class="fas fa-play control controlPlay"
+            id="playMusic"
+            title="Play"
+          ></i>
+          <i class="fas fa-forward control" id="nextMusic" title="Next"></i>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

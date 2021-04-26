@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Pomodoro Timer ⏰</h1>
+    <div class="timer">
+      <div class="timer__controls">
+        <button data-time="2" class="timer__button">20 Secs</button>
+        <button data-time="600" class="timer__button">10 Mins</button>
+        <button data-time="900" class="timer__button">15 Mins</button>
+        <button data-time="1200" class="timer__button">20 Mins</button>
+        <button data-time="3600" class="timer__button">60 Mins | 1 Hour</button>
+
+        <form name="customForm" id="custom">
+          <input
+            type="number"
+            name="minutes"
+            placeholder="Enter Minutes"
+            class="input"
+          />
+        </form>
+      </div>
+
+      <div class="display">
+        <h1 class="display__time-left"></h1>
+        <p class="display__end-time"></p>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>

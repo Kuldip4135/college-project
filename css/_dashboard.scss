@@ -1,0 +1,57 @@
+.dashboard--body {
+  background-color: #0f0f0f;
+}
+
+nav h1 {
+  font-size: 3rem;
+  color: #d5d2da;
+}
+
+.tools-section {
+  margin-top: 8rem;
+}
+
+.tools-content h1 {
+  text-align: center;
+  color: #d5d2da;
+  font-size: 3.4rem;
+}
+
+.tools-gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: 5rem;
+}
+
+.tools-gridItem {
+  height: 38rem;
+  background-color: #d5d2da;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.tools-gridItem i:not(.fa-arrow-right) {
+  font-size: 6rem;
+}
+
+.tools-gridItem:hover i:not(.fa-arrow-right) {
+  color: #7633f9;
+}
+
+.tools-gridItem h4 {
+  font-size: 3rem;
+}
+
+.tools-gridItem .btn:hover {
+  background-color: #0f0f0f;
+  color: #d5d2da;
+}
+
+.tools-gridItem .btn i {
+  margin-left: 1rem;
+}

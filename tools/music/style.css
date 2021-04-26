@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-color: #0f0f0f;
+  --link-color: #7633f9;
+  --text-color: #d5d2da;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("./backgrounds/angles.png") no-repeat center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+  margin: -2rem 0;
+}
+
+.music__container {
+  width: 34rem;
+  height: 53rem;
+  padding: 3rem;
+  background-color: var(--text-color);
+  border-radius: 2rem;
+  text-align: center;
+  margin-top: -5rem;
+}
+
+.music__container h2 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.music__container h3 {
+  font-size: 1rem;
+  opacity: 0.6;
+  margin: 0.5rem 0 4rem 0;
+}
+
+.music__img {
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+}
+
+.music__img img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.music__controls {
+  width: 20rem;
+  margin: 2rem auto auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.control:hover {
+  color: var(--link-color);
+}
+
+.controlPlay {
+  background-color: var(--heading-color);
+  color: var(--text-color);
+  padding: 1.2rem;
+  border-radius: 10rem;
+  margin: 0 auto;
+}
+
+.controlPlay:hover {
+  color: var(--text-color);
+  background-color: var(--link-color);
+}
+
+.animateImg {
+  animation: rotateImage 3s linear infinite;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progressbar__container {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.progress__duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress__duration p {
+  font-size: 1.2rem;
+}
+
+.progressMeter__container {
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  appearance: none;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 10rem;
+  background-color: var(--link-color);
+  appearance: none;
+}
